@@ -1,0 +1,262 @@
+/* CSS by ///ADD/// YOUR NAME */
+
+/* Imported Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wdth,wght@0,18..144,87..112,300..900;1,18..144,87..112,300..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+/* ///ADD/// CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+/* Root Variables */
+:root {
+    --blue-bulletin: #1D3557;
+    --news-flash: #E63946;
+    --watchdog-white: #F1FAEE;
+    --truth-text: #333;
+    --story-subtitle: #457B9D;
+    --font-body: "Source Sans 3", sans-serif;
+    --font-heading: 'Merriweather', serif;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    --transition: all 0.5s ease;
+}
+
+/* Manual Light/Dark Mode Styles*/
+body.light-mode {
+    background-color: var(--watchdog-white);
+    color: var(--truth-text);
+}
+
+body.dark-mode {
+    background-color: var(--truth-text);
+    color: var(--watchdog-white);
+}
+
+#theme-toggle {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: var(--watchdog-white);
+    border: 1px solid var(--blue-bulletin);
+    border-radius: 1.5rem;
+    cursor: pointer;
+}
+
+/* ///ADD/// Skip Link Styles */
+.skipLink {
+    position: absolute;
+    visibility: hidden;
+    top: -1000px;
+    background-color: var(--news-flash);
+    color: var(--watchdog-white);
+}
+
+.skipLink:focus-visible {
+    visibility: visible;
+    top: 0;
+}
+/* ///ADD/// Navigation Styles */
+header {
+    background-color: var(--blue-bulletin);
+    color: var(--watchdog-white);
+    padding: 2em;
+    padding-left: 5em;
+    margin: auto;
+    max-width: 1024px;
+}
+
+header h1 {
+    font-size: 4em;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--watchdog-white);
+    background-color: var(--news-flash);
+    font-family: var(--font-body);
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-weight: 500;
+    padding: 0.5em;
+    margin-right: 1em;
+}
+
+.menu-button {
+    display: none;
+}
+/* ///ADD/// Global Layout Styles */
+body {
+    background-color: var(--watchdog-white);
+}
+
+main {
+    margin: auto;
+    margin-top: 2.5em;
+    padding-left: 5em;
+    padding-right: 5em;
+    max-width: 1024px;
+}
+
+#news {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#section1 {
+    grid-column: 1/2;
+    margin-right: 1em;
+    background-color: var(--news-flash);
+    border: 1px solid var(--truth-text);
+    box-shadow: var(--shadow);
+    padding: 1em;
+    width: 380px;
+}
+
+video {
+    width: 380px;
+    height: auto;
+}
+
+#section2 {
+    grid-column: 2/2;
+    background-color: var(--news-flash);
+    border: 1px solid var(--truth-text);
+    box-shadow: var(--shadow);
+    padding: 1em;
+    width: 380px;
+}
+
+#articles {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#articles article {
+    width: 280px;
+    border: 1px solid var(--truth-text);
+    box-shadow: var(--shadow);
+    padding: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+
+#article1, #article4, #article7, #article10 {
+    grid-column: 1/1;
+}
+
+#article2, #article5, #article8, #article11 {
+    grid-column: 2/2;
+}
+
+#article3, #article6, #article9, #article12 {
+    grid-column: 3/3;
+    margin-right: 0em;
+}
+
+#article10, #article11, #article12 {
+    margin-bottom: 0em !important;
+}
+
+footer {
+    max-width: 1024px;
+    margin: auto;
+    padding-left: 5em;
+}
+/* ///ADD/// Global Text Styles */
+h1, h2, h3 {
+    font-family: var(--font-heading);
+}
+
+h2 {
+    font-size: 1.3em;
+    margin-bottom: 0.5em;
+}
+
+p {
+    font-family: var(--font-body);
+}
+
+.tagline {
+    font-size: 1.1em;
+    font-family: var(--font-heading);
+    margin-top: 0.5em;
+    margin-bottom: 1.5em;
+}
+
+blockquote.tagline {
+    text-align: center;
+    font-weight: 700;
+}
+
+#news h3, #news p {
+    color: var(--watchdog-white);
+}
+
+/* ///ADD/// medium styles 620px */
+@media screen and (max-width: 620px) {
+    
+}
+
+/* ///ADD/// large styles 920px */
+@media screen and (max-width: 920px) and (min-width: 621px) {
+    
+}
+
+/* ///ADD/// x-large styles 1024px */
+@media screen and (max-width: 1024px) and (min-width: 921px) {
+    #section1 h3{
+        font-size: 0.9em;
+        margin-bottom: 0.5em;
+        border-bottom: 1px solid var(--watchdog-white);
+    }
+
+    #section1 p{
+        font-size: 0.8em;
+    }
+
+    #section2 h3{
+        font-size: 0.9em;
+        margin-bottom: 0.5em;
+        border-bottom: 1px solid var(--watchdog-white);
+    }
+
+    #section2 p{
+        font-size: 0.8em;
+    }
+}
+
+/* ///ADD/// Interaction Queries for color scheme light and dark and motion preference */
+
+
+/* ///ADD///  Feature Query for :has() that checks if the #menu-toggle is checked */
+@supports (selector(:has(*))) {
+    
+}
