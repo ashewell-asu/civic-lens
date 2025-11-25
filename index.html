@@ -115,41 +115,60 @@
         <section>
             <h2>Stay Informed. Stay Empowered.</h2>
             <p>Receive text messages with the news you want to know.</p>
-            <form action="POST" method="https://wp.zybooks.com/form-viewer.php">
-                <label for="myName">Name</label>
-                <input type="text" id="myName" name="myName">
-                <label for="phoneNumber">Mobile</label>
-                <input type="tel" id="phoneNumber" name="phoneNumber">
+            <form method="POST" action="https://wp.zybooks.com/form-viewer.php">
+            	<div class="column1">
+	                <label for="myName">Name</label>
+    	            <input type="text" id="myName" name="myName">
+    	        </div>
+    	        <div class="column2">
+	                <label for="phoneNumber">Mobile</label>
+    	            <input type="tel" id="phoneNumber" name="phoneNumber">
+    	        </div>
                 <fieldset>
                     <legend>Notification Preferences</legend>
-                    <input type="checkbox" id="breakingNews" name="breakingNews">
-                    <label for="Breaking News">Breaking News</label>
-                    <input type="checkbox" id="politics" name="politics">
-                    <label for="politics">Politics</label>
-                    <input type="checkbox" id="weather" name="weather">
-                    <label for="weather">Weather</label>
-                    <input type="checkbox" id="sports" name="sports">
-                    <label for="sports">Sports</label>
-                    <input type="checkbox" id="entertainment" name="entertainment">
-                    <label for="entertainment">Entertainment</label>
-                    <input type="checkbox" id="world" name="world">
-                    <label for="world">World</label>
-                    <input type="checkbox" id="financial" name="financial">
-                    <label for="financial">Financial</label>
+                    <div class="item">
+	                    <input type="checkbox" id="breakingNews" name="breakingNews">
+    	                <label for="breakingNews">Breaking News</label>
+    	            </div>
+    	            <div class="item">
+	                    <input type="checkbox" id="politics" name="politics">
+    	                <label for="politics">Politics</label>
+    	            </div>
+    	            <div class="item">
+	                    <input type="checkbox" id="weather" name="weather">
+    	                <label for="weather">Weather</label>
+    	            </div>
+    	            <div class="item">
+	                    <input type="checkbox" id="sports" name="sports">
+    	                <label for="sports">Sports</label>
+    	            </div>
+    	            <div class="item">
+	                    <input type="checkbox" id="entertainment" name="entertainment">
+    	                <label for="entertainment">Entertainment</label>
+    	            </div>
+    	        	<div class="item">
+	                    <input type="checkbox" id="world" name="world">
+    	                <label for="world">World</label>
+    	            </div>
+    	            <div class="item">
+	                    <input type="checkbox" id="financial" name="financial">
+    	                <label for="financial">Financial</label>
+    	            </div>
                 </fieldset>
-                
-                Subscribe
+                <input type="submit" value="Subcribe" id="subscribeBtn">
             </form>
                 
         </section>
     </main>
     <footer>
         <h2>Follow Us</h2>
-        <button>X</button>
-        <button>Instagram</button>
-        <button>YouTube</button>
-        <button>TikTok</button>
-        <button>LinkedIn</button>    
+        <section id="social">
+	        <a href="#">Twitter/X</a>
+    	    <a href="#">Instagram</a>
+        	<a href="#">YouTube</a>
+	        <a href="#">TikTok</a>
+    	    <a href="#">LinkedIn</a>    
+    	</section>
         <p>&copy; 2025 Civic Lens. All rights reserved.</p>
     </footer>   
     <script>
